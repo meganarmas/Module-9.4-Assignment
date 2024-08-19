@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+    <html>
+    <head>
+    <title>Implementing Bootstrap Components</title>
+        <meta charset="UTF-8">
+        <met name = "viewpoint" content="width-device-width, initial-scale-1.0">
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <script src="js/bootstrap.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Tech Solutions Navigation</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class ="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+            
+            <header class="bg-black text-white text-center py-4">
+                <div class="container">
+                    <h1>Tech Solutions Services</h1>
+                    <p class="text-white">Welcome! We're here to help you in any way you need!</p>
+                </div>
+            </header>
+    
+            <!-- services -->
+            <section id="services" class="container py-3">
+                <h2 class="text-center mb-2">Services</h2>
+                    <div class="row">
+                        <div class="col-md mb-3">
+                            <div class="card">
+                                <img src="web-development.jpg" class="card-img-top " alt="image of Web Development"/>
+                                    <div class="card-body">
+                                        <h2 class="text-center">Web Development</h2>
+                                                <p class="text-center mt-2">We can help you achieve the webpage of your dreams.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md mb-3">
+                            <div class="card">
+                                <img src="cybersecurity-graphic.jpg" class="card-img-top " alt="image of Cyber Security graphic"/>
+                                    <div class="card-body">
+                                        <h2 class="text-center">Cyber Security</h2>
+                                                <p class="text-center mt-2">Our team can help you protect your data from hackers.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md mb-3">
+                            <div class="card">
+                                <img src="graphic design.jpg" class="card-img-top " alt="image of an graphic designer artist working"/>
+                                    <div class="card-body">
+                                        <h2 class="text-center">Graphic Design</h2>
+                                                <p class="text-center mt-2">We can make your company a logo, specific designs for video or ad usage, or specially made graphics for your site.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- about section -->
+            <section id="about" class="container py-3">
+                <h2 class="text-center mb-4">About Us</h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="about">
+                            <p>We are a small team of web developers, graphic designers, and cyber security professionals who are ready to help you out with anything!</p>
+                            <a href="#" class="btn btn-info">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="about">
+                            <h3>Contact Information</h3>
+                            <p>Email: contact@techsolutions.com</p> 
+                                <p>Phone: 987-654-3210</p>
+                                <p>Address: 456 Main Street, Dallas, TX</p>
+                        </div>
+                    </div>
+                    </div>
+                 </section>
+    
+             <!-- contact us -->
+            <section id="contact" class="container py-5 bg-light">
+                <h2 class="text-center bg-black text-white">Contact Us</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="contact-form">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name"class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"/>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                                </div>
+    
+                                <div class="mb-3">
+                                    <label for="drop-services-menu" class="mb-3">Services</label>
+                                        <select class="form-select" id="drop-services-menu" required>
+                                            <option disabled selected>Select a Service</option>
+                                            <option>Web Development</option>
+                                            <option>Cyber Security</option>
+                                            <option>Graphic Design</option>
+                                        </select>
+                                </div>
+    
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" row="3" placeholder="Enter your message" required>
+                                    </textarea>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </form>
+        </section>    
+        
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <h6>© 2024 Tech Solutions.</h6>
+                            <p>Email: contact@techsolutions.com</p> 
+                            <p>Phone: 987-654-3210</p>
+                            <p>Address: 456 Main Street, Dallas, TX</p>
+                        </div>
+                    <div class="col-md-4 mb-3">
+                        <a href="#" class="d-block mb-2 text-center">Facebook</a>
+                        <a href="#" class="d-block mb-2 text-center">LinkedIn</a>
+                        <a href="#" class="d-block mb-2 text-center">Instagram</a>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h6>Newsletter</h6>
+                        <form>
+                            <div class="mb-2">
+                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+    </html>
